@@ -9,6 +9,7 @@ module.exports = class Client {
 
     start() {
         this.ws = new WebSocket(this.uri);
+	this.ws.setMaxListeners(0);
     }
 
     sendChat(str) {
