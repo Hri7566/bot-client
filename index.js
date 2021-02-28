@@ -8,7 +8,7 @@ var rl = readline.createInterface({
 });
 
 
-var client = new Client("wss://hri7566.info:1222");
+var client = new Client("ws://bot.hri7566.info:8080");
 client.start();
 
 client.ws.on('error', (err) => {
